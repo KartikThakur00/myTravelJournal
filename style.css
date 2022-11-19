@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter';
+}
+
+/* navbar */
+.nav {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  background-color: #F55A5A;
+  margin-bottom: 40px;
+}
+
+.nav-logo {
+  width: 24px;
+}
+
+.nav-text {
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  color: #FFFFFF;
+}
+
+.line {
+  position: relative;
+  width: 90%;
+  height: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #F5F5F5;
+}
+
+/* Card */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.card-img {
+  width: 125px;
+  height: 168px;
+  aspect-ratio: auto 1080 / 720;
+  border-radius: 5px;
+}
+
+.first-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.location-name {
+  font-weight: 400;
+  font-size: 10.24px;
+  letter-spacing: 0.17em;
+  color: #2B283A;
+}
+
+.location-link {
+  font-size: 10.24px;
+  text-decoration-line: underline;
+  color: #918E9B;
+}
+
+.title {
+  max-width: fit-content;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #2B283A;
+  margin-top: 0;
+}
+
+.date {
+  font-weight: 700;
+  font-size: 10.24px;
+  color: #2B283A;
+}
+
+.description {
+  max-width: max-content;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  color: #2B283A;
+}
+
+@media screen and (width>617px) {
+  .description {
+    max-width: 326px;
+  }
+
+  .location-name,
+  .location-link,
+  .date,
+  .description {
+    font-size: 12px;
+  }
+ .card-img{
+  width: 220px;
+ }
+  .line {
+    width: 550px;
+  }
+
+}
